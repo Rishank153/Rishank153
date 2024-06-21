@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container.dark-mode {
+    background-color: #444;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+input, select {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+button.dark-mode {
+    background-color: #28a745;
+    color: white;
+}
+
+button.dark-mode:hover {
+    background-color: #218838;
+}
+
+.filter-container {
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.filter-btn:hover {
+    background-color: #ddd;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+#empty-message {
+    color: #aaa;
+    font-style: italic;
+}
+
+.progress-container {
+    margin-top: 20px;
+}
+
+#progress-bar {
+    width: 100%;
+}
+
+body.dark-mode #todo-input, 
+body.dark-mode #due-date-input, 
+body.dark-mode #priority-input {
+    background-color: #555;
+    color: white;
+    border: 1px solid #777;
+}
+
+body.dark-mode li {
+    background-color: #555;
+    color: white;
+    border: 1px solid #777;
+}
+
+body.dark-mode .filter-btn:hover {
+    background-color: #555;
+}
+
+body.dark-mode .delete-btn:hover {
+    background-color: #a82333;
+}
